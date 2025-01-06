@@ -1,4 +1,4 @@
-<style>
+
     /* Header 樣式 */
     .main-nav {
         position: fixed;
@@ -110,4 +110,3 @@
     main {
         padding-top: 80px; /* 根據header高度調整 */
     }
-</style>
