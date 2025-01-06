@@ -1,15 +1,218 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>你好，GitHub</title>
-	</head>
-	<body>
-		<div class="container">
-			<h1 id="heading">頭版消息</h1>
-			<div>Hello Java World !! <br><h1>覺得厲害</h1></div>
-			<div><img src="./images/IMG_0068.JPG" width="200" height="100"></div>
-			<div id="footer">版權聲明 測試 V1.1</div>
-		</div>
-	</body>
-</html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>2024台灣無人機競速賽</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">首頁</a></li>
+                <li><a href="market.html">二手交易</a></li>
+                <li><a href="#database">無人機資料庫</a></li>
+                <li><a href="#about">比賽說明</a></li>
+                <li><a href="#courses">課程資訊</a></li>
+                <li><a href="#registration">報名系統</a></li>
+                <li><a href="#contact">聯絡我們</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>RESCUE CHALLENGE</h1>
+            <p>2024台灣無人機救援挑戰賽</p>
+            <div class="hero-features">
+                <div class="feature">
+                    <i class="fas fa-helicopter"></i>
+                    <span>專業競速賽道</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-medal"></i>
+                    <span>豐厚獎金獎勵</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>專業培訓課程</span>
+                </div>
+            </div>
+            <a href="#registration" class="cta-button">立即報名</a>
+        </div>
+    </section>
+
+    <main>
+        <section id="home">
+            <h1>2024台灣無人機競速賽</h1>
+            <p class="highlight">挑戰極限速度，展現卓越技術！</p>
+        </section>
+
+        <section id="database">
+            <h2 style="background-color: #f8f8f8;">無人機資料庫</h2>
+            <div class="database-container">
+                <div class="drone-specs">
+                    <h3>競速無人機型號資料</h3>
+                    <div class="spec-card">
+                        <h4>DJI FPV Combo</h4>
+                        <ul>
+                            <li>最大飛行速度：140 km/h</li>
+                            <li>電池容量：2000mAh</li>
+                            <li>飛行時間：約20分鐘</li>
+                            <li>傳輸距離：10公里</li>
+                            <li>重量：795g</li>
+                        </ul>
+                    </div>
+                    <!-- 更多規格卡片 -->
+                </div>
+                
+                <div class="pilot-database">
+                    <h3>優秀飛手資料庫</h3>
+                    <div class="pilot-card">
+                        <img src="images/pilot1.jpg" alt="飛手照片" style="width: 200px; height: 200px; object-fit: cover;">
+                        <div class="pilot-info">
+                            <h4>永不炸機</h4>
+                            <p>專業組冠軍</p>
+                            <p>最佳競速成績：45秒</p>
+                        </div>
+                    </div>
+                    <!-- 更多飛手資料 -->
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>比賽說明</h2>
+            <div class="track-showcase">
+                <div class="track-image-container">
+                    <img src="images/track.jpg" alt="專業無人機競速賽道" class="track-image">
+                    <div class="track-overlay">
+                        <span>多層次立體競速賽道</span>
+                    </div>
+                </div>
+                <div class="track-info">
+                    <h3>專業競速賽道</h3>
+                    <p>特別設計的多層次立體賽道，包含：</p>
+                    <ul>
+                        <li><i class="fas fa-angle-right"></i> 垂直攀升障礙</li>
+                        <li><i class="fas fa-angle-right"></i> 精準降落平台</li>
+                        <li><i class="fas fa-angle-right"></i> 穿越環形障礙</li>
+                        <li><i class="fas fa-angle-right"></i> 模擬救援任務</li>
+                    </ul>
+                    <p class="track-highlight">專業賽事規格，挑戰極限技術！</p>
+                </div>
+            </div>
+            <div class="competition-info">
+                <div class="info-cards">
+                    <div class="info-card">
+                        <div class="card-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>比賽類別</h3>
+                        <div class="card-content">
+                            <div class="category-item">
+                                <span class="category-name">新手組</span>
+                                <span class="category-spec">250mm級</span>
+                            </div>
+                            <div class="category-item">
+                                <span class="category-name">進階組</span>
+                                <span class="category-spec">350mm級</span>
+                            </div>
+                            <div class="category-item">
+                                <span class="category-name">專業組</span>
+                                <span class="category-spec">500mm級</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="card-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3>賽事時程</h3>
+                        <div class="card-content">
+                            <div class="schedule-item">
+                                <span class="date">2024年6月15日</span>
+                                <span class="event">預賽</span>
+                            </div>
+                            <div class="schedule-item">
+                                <span class="date">2024年6月16日</span>
+                                <span class="event">決賽</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="card-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3>獎金設置</h3>
+                        <div class="card-content">
+                            <div class="prize-item">
+                                <span class="rank">冠軍</span>
+                                <span class="prize-amount">NT$50,000</span>
+                            </div>
+                            <div class="prize-item">
+                                <span class="rank">亞軍</span>
+                                <span class="prize-amount">NT$30,000</span>
+                            </div>
+                            <div class="prize-item">
+                                <span class="rank">季軍</span>
+                                <span class="prize-amount">NT$10,000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="courses">
+            <h2>課程資訊</h2>
+            <div class="course-grid">
+                <div class="course-card">
+                    <h3>基礎飛行課程</h3>
+                    <p>適合：完全新手</p>
+                    <p>時長：12小時</p>
+                    <p>費用：NT$6,000</p>
+                </div>
+                <div class="course-card">
+                    <h3>競速技巧進階班</h3>
+                    <p>適合：具基礎飛行經驗者</p>
+                    <p>時長：16小時</p>
+                    <p>費用：NT$8,000</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="registration">
+            <h2>報名系統</h2>
+            <form id="registration-form">
+                <div class="form-group">
+                    <label for="name">姓名：</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">電子郵件：</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="category">參賽組別：</label>
+                    <select id="category" required>
+                        <option value="">請選擇...</option>
+                        <option value="beginner">新手組</option>
+                        <option value="advanced">進階組</option>
+                        <option value="pro">專業組</option>
+                    </select>
+                </div>
+                <button type="submit">提交報名</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>聯絡我們：drone@competition.tw</p>
+        <p>主辦單位：台灣無人機競速協會</p>
+    </footer>
+</body>
+</html> 
