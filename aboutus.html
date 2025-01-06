@@ -4,8 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>關於我們 - 機刻救援</title>
+    <link rel="stylesheet" href="samestyles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
+        /* 頁面特定樣式 */
+        body {
+            padding: 20px;
+            background-color: #f0f2f5;
+        }
+        
         /* 基本樣式 */
         body {
             font-family: '微軟正黑體', sans-serif;
@@ -75,6 +82,25 @@
         strong {
             color: #ff6b00;
         }
+        
+        .timeline {
+            border-left: 3px solid #ff6b00;
+            padding-left: 30px;
+            margin-left: 20px;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -37px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #ff6b00;
+            border: 3px solid #fff;
+            box-shadow: 0 0 0 3px rgba(255,107,0,0.3);
+        }
     </style>
 </head>
 <body>
@@ -82,12 +108,12 @@
     <nav class="main-nav">
         <div class="nav-container">
             <div class="logo">
-                <img src="logo.png" alt="機刻救援">
+                <img src="images/logo.png" alt="機刻救援">
             </div>
             <ul class="nav-links">
                 <li><a href="/">首頁</a></li>
                 <li><a href="/aboutus" class="active">關於我們</a></li>
-                <li><a href="/market">競賽資訊</a></li>
+                <li><a href="/market">二手交易</a></li>
             </ul>
         </div>
     </nav>
@@ -95,25 +121,35 @@
     <div class="container">
         <h1>關於機刻救援</h1>
 
-        <div class="section">
-            <h2>我們的目的</h2>
-            <ul>
-                <li><strong>教育推廣：</strong>普及無人機應用及AI影像辨識技術在巡檢與救援中的實際應用。</li>
-                <li><strong>技能提升：</strong>增強使用者的無人機操作技能及應急處理能力。</li>
-                <li><strong>社會意識：</strong>將無人機救援納入應急管理與社會安全體系，提高社會對科技巡檢和救援的認識。</li>
-                <li><strong>寓教於樂：</strong>為學生、家庭及業餘玩家提供一個結合學習與娛樂的平台，提升參與感與趣味性。</li>
-            </ul>
+        <div class="section" style="display: flex; gap: 30px; align-items: center;">
+            <div style="flex: 1;">
+                <h2>我們的目的</h2>
+                <ul>
+                    <li><strong>教育推廣：</strong>普及無人機應用及AI影像辨識技術在巡檢與救援中的實際應用。</li>
+                    <li><strong>技能提升：</strong>增強使用者的無人機操作技能及應急處理能力。</li>
+                    <li><strong>社會意識：</strong>將無人機救援納入應急管理與社會安全體系，提高社會對科技巡檢和救援的認識。</li>
+                    <li><strong>寓教於樂：</strong>為學生、家庭及業餘玩家提供一個結合學習與娛樂的平台，提升參與感與趣味性。</li>
+                </ul>
+            </div>
+            <div style="flex: 1;">
+                <img src="images/hope2.jpg" alt="無人機救援願景" style="width: 100%; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            </div>
         </div>
 
-        <div class="section">
-            <h2>需求重點</h2>
-            <ul>
-                <li>開發多難度無人機模擬場景，提供真實感的操作體驗。</li>
-                <li>整合AI影像辨識技術，用於目標搜尋、判定及精確作業。</li>
-                <li>設計友好使用者介面，適合不同年齡層及經驗水平。</li>
-                <li>提供線上/線下競賽平台，方便參與與分享成果。</li>
-                <li>支援教育資源，如教學模組及培訓教材。</li>
-            </ul>
+        <div class="section" style="display: flex; gap: 30px; align-items: center;">
+            <div style="flex: 1;">
+                <img src="images/hope3.jpg" alt="無人機應用場景" style="width: 100%; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            </div>
+            <div style="flex: 1;">
+                <h2>需求重點</h2>
+                <ul>
+                    <li>開發多難度無人機模擬場景，提供真實感的操作體驗。</li>
+                    <li>整合AI影像辨識技術，用於目標搜尋、判定及精確作業。</li>
+                    <li>設計友好使用者介面，適合不同年齡層及經驗水平。</li>
+                    <li>提供線上/線下競賽平台，方便參與與分享成果。</li>
+                    <li>支援教育資源，如教學模組及培訓教材。</li>
+                </ul>
+            </div>
         </div>
 
         <div class="section">
