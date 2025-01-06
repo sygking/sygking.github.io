@@ -9,16 +9,17 @@
 <body>
     <!-- 導航欄 -->
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">首頁</a></li>
-                <li><a href="market.html" class="active">二手交易</a></li>
-                <li><a href="index.html#database">無人機資料庫</a></li>
-                <li><a href="index.html#about">比賽說明</a></li>
-                <li><a href="index.html#courses">課程資訊</a></li>
-                <li><a href="index.html#registration">報名系統</a></li>
-                <li><a href="index.html#contact">聯絡我們</a></li>
-            </ul>
+        <nav class="main-nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="logo.png" alt="機刻救援">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="/">首頁</a></li>
+                    <li><a href="/aboutus">關於我們</a></li>
+                    <li><a href="/market" class="active">競賽資訊</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -89,8 +90,10 @@
     </main>
 
     <footer>
-        <p>聯絡我們：drone@competition.tw</p>
-        <p>主辦單位：台灣無人機競速協會</p>
+        <div class="footer-info">
+            <p>聯絡我們：drone@competition.tw</p>
+            <p>主辦單位：台灣無人機競速協會</p>
+        </div>
     </footer>
 </body>
 </html> 
