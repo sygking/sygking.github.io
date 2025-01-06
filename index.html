@@ -209,11 +209,56 @@
                 <button type="submit">提交報名</button>
             </form>
         </section>
+
+        <div class="stats-section">
+            <div class="container">
+                <div class="stat-item fade-in">
+                    <span class="counter" data-target="1000">0</span>
+                    <p>成功救援案例</p>
+                </div>
+                <!-- 更多統計項目 -->
+            </div>
+        </div>
     </main>
 
     <footer>
         <p>聯絡我們：drone@competition.tw</p>
         <p>主辦單位：台灣無人機競速協會</p>
     </footer>
+
+    <script>
+        // 數字計數動畫
+        const counters = document.querySelectorAll('.counter');
+        
+        function startCounting(counter) {
+            const target = parseInt(counter.getAttribute('data-target'));
+            const increment = target / 100;
+            let current = 0;
+            
+            const updateCounter = () => {
+                if (current < target) {
+                    current += increment;
+                    counter.textContent = Math.ceil(current);
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    counter.textContent = target;
+                }
+            };
+            
+            updateCounter();
+        }
+        
+        // 當元素進入視窗時開始計數
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    startCounting(entry.target);
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        });
+        
+        counters.forEach(counter => statsObserver.observe(counter));
+    </script>
 </body>
 </html> 
